@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)file:///C:/Users/umyrm5m/Desktop/%E4%B8%9A%E5%8A%A1%E5%8F%98%E9%9D%A9%E7%BB%84%E7%BB%87%E8%AF%84%E4%BC%B0%E6%A1%86%E6%9E%B6_ENCN.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大众汽车集团中国 - 组织变革评估框架 | Volkswagen Group China - Organizational Change Evaluation Framework</title>
+    <style>
+        :root {
+            --primary-color: #008c82;
+            --secondary-color: #f5f5f5;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --success-color: #4CAF50;
+            --warning-color: #FF9800;
+            --danger-color: #F44336;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background-color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 15px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+        }
+        .section-title {
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .en-text {
+            display: none;
+            color: #666;
+            font-style: italic;
+        }
+        .module {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+        }
+        .module-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        .criteria-group {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+        }
+        .criteria-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .score-display {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            font-weight: bold;
+            color: var(--success-color);
+        }
+        .threshold-note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff3e0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .submit-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #00695c;
+        }
+        .result-section {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid var(--success-color);
+            border-radius: 5px;
+            background-color: #e8f5e9;
+        }
+        .result-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--success-color);
+        }
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .score-table th, .score-table td {
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            text-align: left;
+        }
+        .score-table th {
+            background-color: var(--secondary-color);
+        }
+        .example-box {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .example-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1976d2;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .module {
+                padding: 10px;
+            }
+            .submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang(&#39;zh&#39;)">中文</button>
+            <button class="lang-btn" onclick="switchLang(&#39;en&#39;)">English</button>
+        </div>
+
+        <h1 class="zh-text" style="display: block;">大众汽车集团中国 - 业务变革组织评估框架</h1>
+        <h1 class="en-text" style="display: none;">Volkswagen Group China - Business Change Organizational Evaluation Framework</h1>
+
+        <div class="section">
+            <div class="section-title zh-text" style="display: block;">评估框架说明</div>
+            <div class="section-title en-text" style="display: none;">Framework Description</div>
+            
+            <p class="zh-text" style="display: block;">本框架用于业务部门（BU）自评因业务需求变化带来的组织变革需求，包括岗位配置必要性、数量合理性、层级设置及协同接口设计等。评估结果将作为HR COE介入的先行判断标准。</p>
+            <p class="en-text" style="display: none;">This framework enables Business Units (BUs) to self-assess organizational change needs arising from business demand changes, including position necessity, quantity rationality, level setting, and collaboration interface design. Results serve as a preliminary screening criterion for HR COE intervention.</p>
+            
+            <div class="threshold-note">
+                <p class="zh-text" style="display: block;"><strong>评分阈值说明：</strong><br>
+                - 优先处理：总分≥80分，且无模块得分＜15分<br>
+                - 需优化后重提：60-79分<br>
+                - 不予受理：＜60分（变革需求不合理）</p>
+                <p class="en-text" style="display: none;"><strong>Scoring Thresholds：</strong><br>
+                - Priority Handling：Total score ≥80 points, no module score &lt;15<br>
+                - Optimization Required：60-79 points (revision needed)<br>
+                - Rejection：&lt;60 points (unnecessary change)</p>
+            </div>
+        </div>
+
+        <!-- Module 1: Business Change Legitimacy -->
+        <div class="module">
+            <div class="module-title zh-text" style="display: block;">模块一：业务变革合法性评估（总分26分）</div>
+            <div class="module-title en-text" style="display: none;">Module 1: Business Change Legitimacy (26 points)</div>
+            
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">1. 变革驱动因素（10分）</div>
+                <div class="criteria-title en-text" style="display: none;">1. Change Drivers (10 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">请选择变革驱动类型（可多选）：</label>
+                    <label class="en-text" style="display: none;">Select change driver types (multiple selection allowed)：</label>
+                    <select id="driver-type" multiple="">
+                        <option value="strategy" class="zh-text" style="display: block;">战略调整（如电动化、智能网联业务拓展）</option>
+                        <option value="strategy" class="en-text" style="display: none;">Strategic Adjustment (e.g., electrification, intelligent connectivity expansion)</option>
+                        <option value="regulation" class="zh-text" style="display: block;">合规要求（如新能源汽车安全法规更新）</option>
+                        <option value="regulation" class="en-text" style="display: none;">Regulatory Compliance (e.g., NEV safety regulation updates)</option>
+                        <option value="market" class="zh-text" style="display: block;">市场需求（如用户对智能座舱功能需求增长）</option>
+                        <option value="market" class="en-text" style="display: none;">Market Demand (e.g., growing user demand for smart cockpit features)</option>
+                        <option value="efficiency" class="zh-text" style="display: block;">效率提升（如跨区域业务协同优化）</option>
+                        <option value="efficiency" class="en-text" style="display: none;">Efficiency Improvement (e.g., cross-regional collaboration optimization)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">请简述变革与集团战略的关联性：</label>
+                    <label class="en-text" style="display: none;">Briefly describe alignment with group strategy：</label>
+                    <textarea id="strategy-alignment" placeholder="zh: 例如：本变革响应集团&#39;2030 NEW AUTO&#39;战略中的智能驾驶技术研发需求...
+en: e.g., This change responds to R&amp;D needs for intelligent driving technology in the Group&#39;s &#39;2030 NEW AUTO&#39; strategy..."></textarea>
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">2. 影响范围（8分）</div>
+                <div class="criteria-title en-text" style="display: none;">2. Impact Scope (8 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">变革影响范围：</label>
+                    <label class="en-text" style="display: none;">Change impact scope：</label>
+                    <select id="impact-scope">
+                        <option value="single" class="zh-text" style="display: block;">单一团队</option>
+                        <option value="single" class="en-text" style="display: none;">Single Team</option>
+                        <option value="cross-team" class="zh-text" style="display: block;">跨团队</option>
+                        <option value="cross-team" class="en-text" style="display: none;">Cross-Team</option>
+                        <option value="bu" class="zh-text" style="display: block;">整个BU</option>
+                        <option value="bu" class="en-text" style="display: none;">Entire BU</option>
+                        <option value="group" class="zh-text" style="display: block;">集团层面</option>
+                        <option value="group" class="en-text" style="display: none;">Group Level</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">3. 实施紧迫性（8分）</div>
+                <div class="criteria-title en-text" style="display: none;">3. Implementation Urgency (8 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">计划实施时间：</label>
+                    <label class="en-text" style="display: none;">Planned implementation timeline：</label>
+                    <select id="urgency">
+                        <option value="high" class="zh-text" style="display: block;">≤3个月（高紧急）</option>
+                        <option value="high" class="en-text" style="display: none;">≤3 months (High Urgency)</option>
+                        <option value="medium" class="zh-text" style="display: block;">3-6个月（中紧急）</option>
+                        <option value="medium" class="en-text" style="display: none;">3-6 months (Medium Urgency)</option>
+                        <option value="low" class="zh-text" style="display: block;">＞6个月（低紧急）</option>
+                        <option value="low" class="en-text" style="display: none;">＞6 months (Low Urgency)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="score-display zh-text" id="module1-score" style="display: block;">当前得分：0/26分</div>
+            <div class="score-display en-text" id="module1-score-en" style="display: none;">Current Score：0/26 points</div>
+        </div>
+
+        <!-- Module 2: Position Configuration Demand -->
+        <div class="module">
+            <div class="module-title zh-text" style="display: block;">模块二：岗位配置需求评估（总分30分）</div>
+            <div class="module-title en-text" style="display: none;">Module 2: Position Configuration Demand (30 points)</div>
+            
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">1. 必要性（10分）</div>
+                <div class="criteria-title en-text" style="display: none;">1. Necessity (10 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">现有岗位是否可覆盖需求？</label>
+                    <label class="en-text" style="display: none;">Can existing positions cover the demand？</label>
+                    <select id="existing-coverage">
+                        <option value="no" class="zh-text" style="display: block;">否（需新增岗位）</option>
+                        <option value="no" class="en-text" style="display: none;">No (Need new position)</option>
+                        <option value="partial" class="zh-text" style="display: block;">部分可覆盖（需调整现有岗位职责）</option>
+                        <option value="partial" class="en-text" style="display: none;">Partially (Need to adjust existing roles)</option>
+                        <option value="yes" class="zh-text" style="display: block;">是（无需新增或调整）</option>
+                        <option value="yes" class="en-text" style="display: none;">Yes (No new position needed)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">请说明新增/调整岗位的核心职责及不可替代性：</label>
+                    <label class="en-text" style="display: none;">Explain core responsibilities and irreplaceability of the new/adjusted position：</label>
+                    <textarea id="position-necessity" placeholder="zh: 例如：现有区域HR岗无跨区域协同职责，无法满足集团人才共享需求...
+en: e.g., Existing regional HR positions lack cross-regional collaboration responsibilities, unable to meet group talent sharing needs..."></textarea>
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">2. 数量合理性（10分）</div>
+                <div class="criteria-title en-text" style="display: none;">2. Quantity Rationality (10 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">业务量测算依据（如年处理跨区域调动500+次）：</label>
+                    <label class="en-text" style="display: none;">Workload calculation basis (e.g., 500+ annual cross-regional transfers)：</label>
+                    <input type="text" id="business-volume" placeholder="zh: 请输入业务量数据
+en: Enter workload data">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">人均效能参考值（如集团HR协同岗人均年处理70-90次）：</label>
+                    <label class="en-text" style="display: none;">Per capita efficiency reference (e.g., 70-90 cases/year for Group HR collaboration positions)：</label>
+                    <input type="text" id="per-capita-efficiency" placeholder="zh: 请输入参考值范围
+en: Enter reference range">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">目标负荷率（建议80%-90%）：</label>
+                    <label class="en-text" style="display: none;">Target load rate (recommended 80%-90%)：</label>
+                    <input type="number" id="load-rate" min="0" max="100" placeholder="zh: 如85
+en: e.g., 85">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">测算岗位数量：</label>
+                    <label class="en-text" style="display: none;">Calculated position quantity：</label>
+                    <input type="number" id="position-quantity" min="1" placeholder="zh: 请输入数量
+en: Enter quantity">
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">3. 层级设置匹配度（10分）</div>
+                <div class="criteria-title en-text" style="display: none;">3. Level Matching (10 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">建议岗位层级（如Tariff, Senior Tariff, T+, Management）：</label>
+                    <label class="en-text" style="display: none;">Proposed position level (e.g., Tariff, Senior Tariff, T+, Management)：</label>
+                    <input type="text" id="position-level" placeholder="zh: 请输入建议层级
+en: Enter proposed level">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">层级匹配依据（如5年以上跨区域协同经验、预算权、资源调配权）：</label>
+                    <label class="en-text" style="display: none;">Level matching basis (e.g., 5+ years cross-regional collaboration experience, budget authority, resource allocation rights)：</label>
+                    <textarea id="level-basis" placeholder="zh: 例如：需协调区域HR负责人，拥有跨区域资源调配权，匹配Senior Tariff层级...
+en: e.g., Need to coordinate regional HR leaders, with cross-regional resource allocation authority, matching Senior Tariff level..."></textarea>
+                </div>
+            </div>
+            
+            <div class="score-display zh-text" id="module2-score" style="display: block;">当前得分：0/30分</div>
+            <div class="score-display en-text" id="module2-score-en" style="display: none;">Current Score：0/30 points</div>
+        </div>
+
+        <!-- Module 3: Organizational Collaboration & Sustainability -->
+        <div class="module">
+            <div class="module-title zh-text" style="display: block;">模块三：组织协同与可持续性评估（总分44分）</div>
+            <div class="module-title en-text" style="display: none;">Module 3: Organizational Collaboration &amp; Sustainability (44 points)</div>
+            
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">1. 接口合理性（15分）</div>
+                <div class="criteria-title en-text" style="display: none;">1. Interface Rationality (15 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">上游输入接口（如各区域人才需求表）：</label>
+                    <label class="en-text" style="display: none;">Upstream input interface (e.g., regional talent demand forms)：</label>
+                    <input type="text" id="input-interface" placeholder="zh: 请描述输入接口
+en: Describe input interface">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">下游输出接口（如跨区域调动方案）：</label>
+                    <label class="en-text" style="display: none;">Downstream output interface (e.g., cross-regional transfer plans)：</label>
+                    <input type="text" id="output-interface" placeholder="zh: 请描述输出接口
+en: Describe output interface">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">协同频率（如每日2次同步）：</label>
+                    <label class="en-text" style="display: none;">Collaboration frequency (e.g., 2x daily synchronization)：</label>
+                    <input type="text" id="collab-frequency" placeholder="zh: 请输入协同频率
+en: Enter collaboration frequency">
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">2. 新旧业务衔接（14分）</div>
+                <div class="criteria-title en-text" style="display: none;">2. Old-New Business Continuity (14 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">现有业务承接方案（如知识传承机制）：</label>
+                    <label class="en-text" style="display: none;">Existing business continuity plan (e.g., knowledge transfer mechanism)：</label>
+                    <textarea id="transition-plan" placeholder="zh: 例如：承接现有区域HR业务，知识传承通过跨区域轮岗计划实现...
+en: e.g., Take over existing regional HR business; knowledge transfer via cross-regional rotation plan..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">是否存在业务中断风险？如何规避？</label>
+                    <label class="en-text" style="display: none;">Is there business disruption risk? How to mitigate?：</label>
+                    <textarea id="risk-mitigation" placeholder="zh: 请描述风险及规避措施
+en: Describe risks and mitigation measures"></textarea>
+                </div>
+            </div>
+
+            <div class="criteria-group">
+                <div class="criteria-title zh-text" style="display: block;">3. 长期效能贡献（15分）</div>
+                <div class="criteria-title en-text" style="display: none;">3. Long-term Efficiency Contribution (15 points)</div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">1年效能目标（如跨区域调动周期缩短20%）：</label>
+                    <label class="en-text" style="display: none;">1-year efficiency target (e.g., 20% shorter cross-regional transfer cycle)：</label>
+                    <input type="text" id="short-term-goal" placeholder="zh: 请输入1年目标
+en: Enter 1-year target">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">3年战略贡献（如集团人才利用率提升15%）：</label>
+                    <label class="en-text" style="display: none;">3-year strategic contribution (e.g., 15% higher group talent utilization rate)：</label>
+                    <input type="text" id="long-term-goal" placeholder="zh: 请输入3年目标
+en: Enter 3-year target">
+                </div>
+                
+                <div class="input-group">
+                    <label class="zh-text" style="display: block;">内部人才培养计划（如轮岗机制、技能培训）：</label>
+                    <label class="en-text" style="display: none;">Internal talent development plan (e.g., rotation mechanism, skill training)：</label>
+                    <textarea id="talent-development" placeholder="zh: 例如：可内部培养协同专员，通过专项培训提升技能，向Management层级发展...
+en: e.g., Can internally develop collaboration specialists via specialized training, progressing to Management level..."></textarea>
+                </div>
+            </div>
+            
+            <div class="score-display zh-text" id="module3-score" style="display: block;">当前得分：0/44分</div>
+            <div class="score-display en-text" id="module3-score-en" style="display: none;">Current Score：0/44 points</div>
+        </div>
+
+        <button class="submit-btn zh-text" onclick="calculateScore()" style="display: block;">提交评估</button>
+        <button class="submit-btn en-text" onclick="calculateScore()" style="display: none;">Submit Evaluation</button>
+
+        <!-- Result Section -->
+        <div class="result-section" id="result-section">
+            <div class="result-title zh-text" style="display: block;">组织变革需求评估结果</div>
+            <div class="result-title en-text" style="display: none;">Organizational Change Evaluation Result</div>
+            
+            <table class="score-table">
+                <tbody><tr>
+                    <th class="zh-text" style="display: block;">评估模块</th>
+                    <th class="en-text" style="display: none;">Evaluation Module</th>
+                    <th class="zh-text" style="display: block;">得分</th>
+                    <th class="en-text" style="display: none;">Score</th>
+                    <th class="zh-text" style="display: block;">权重占比</th>
+                    <th class="en-text" style="display: none;">Weight</th>
+                </tr>
+                <tr>
+                    <td class="zh-text" style="display: block;">业务变革合法性</td>
+                    <td class="en-text" style="display: none;">Business Change Legitimacy</td>
+                    <td id="module1-result">0</td>
+                    <td>26%</td>
+                </tr>
+                <tr>
+                    <td class="zh-text" style="display: block;">岗位配置需求</td>
+                    <td class="en-text" style="display: none;">Position Configuration Demand</td>
+                    <td id="module2-result">0</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td class="zh-text" style="display: block;">组织协同与可持续性</td>
+                    <td class="en-text" style="display: none;">Organizational Collaboration &amp; Sustainability</td>
+                    <td id="module3-result">0</td>
+                    <td>44%</td>
+                </tr>
+                <tr>
+                    <td class="zh-text" style="display: block;"><strong>总分</strong></td>
+                    <td class="en-text" style="display: none;"><strong>Total Score</strong></td>
+                    <td id="total-score"><strong>0</strong></td>
+                    <td>100%</td>
+                </tr>
+            </tbody></table>
+            
+            <div id="result-feedback"></div>
+            
+            <div class="example-box">
+                <div class="example-title zh-text" style="display: block;">行业参考案例：</div>
+                <div class="example-title en-text" style="display: none;">Industry Reference Cases：</div>
+                
+                <p class="zh-text" style="display: block;">• 新能源电池安全研发岗：82分（优先处理，符合法规及战略需求）<br>
+                • 智能驾驶系统研发岗：73分（需补充3年战略对齐说明）<br>
+                • One HR区域协同岗：74分（需补充岗位层级预算权说明，建议明确为Senior Tariff层级）</p>
+                <p class="en-text" style="display: none;">• NEV Battery Safety R&amp;D Position：82/100 (Priority handling, compliant with regulations and strategy)<br>
+                • Intelligent Driving System R&amp;D Position：73/100 (Needs 3-year strategic alignment clarification)<br>
+                • One HR Regional Collaboration Position：74/100 (Needs budget authority clarification, recommend specifying Senior Tariff level)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Language switch function
+        function switchLang(lang) {
+            const zhElements = document.querySelectorAll('.zh-text');
+            const enElements = document.querySelectorAll('.en-text');
+            const langBtns = document.querySelectorAll('.lang-btn');
+            
+            if (lang === 'zh') {
+                zhElements.forEach(el => el.style.display = 'block');
+                enElements.forEach(el => el.style.display = 'none');
+                langBtns[0].classList.add('active');
+                langBtns[1].classList.remove('active');
+            } else {
+                zhElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
+                langBtns[0].classList.remove('active');
+                langBtns[1].classList.add('active');
+            }
+        }
+
+        // Score calculation function (simplified logic for demonstration)
+        function calculateScore() {
+            let module1Score = 0, module2Score = 0, module3Score = 0;
+
+            // Module 1 scoring logic
+            const driverCount = document.getElementById('driver-type').selectedOptions.length;
+            const strategyAlignment = document.getElementById('strategy-alignment').value.length;
+            module1Score = Math.min(driverCount * 2.5, 10) + (strategyAlignment > 50 ? 8 : 5) + (document.getElementById('urgency').value === 'high' ? 8 : 5);
+            module1Score = Math.min(module1Score, 26);
+
+            // Module 2 scoring logic
+            const existingCoverage = document.getElementById('existing-coverage').value;
+            const positionQuantity = document.getElementById('position-quantity').value;
+            const levelBasis = document.getElementById('level-basis').value;
+            module2Score = (existingCoverage === 'no' ? 10 : 5) + (positionQuantity > 0 ? 10 : 0) + (levelBasis.includes('Tariff') || levelBasis.includes('Senior') || levelBasis.includes('T+') || levelBasis.includes('Management') ? 10 : 5);
+            module2Score = Math.min(module2Score, 30);
+
+            // Module 3 scoring logic
+            const collabFrequency = document.getElementById('collab-frequency').value.length;
+            const shortTermGoal = document.getElementById('short-term-goal').value.length;
+            module3Score = (collabFrequency > 0 ? 15 : 5) + (document.getElementById('transition-plan').value.length > 50 ? 14 : 7) + (shortTermGoal > 0 ? 15 : 5);
+            module3Score = Math.min(module3Score, 44);
+
+            // Update module scores
+            document.getElementById('module1-score').textContent = `当前得分：${module1Score}/26分`;
+            document.getElementById('module1-score-en').textContent = `Current Score：${module1Score}/26 points`;
+            document.getElementById('module2-score').textContent = `当前得分：${module2Score}/30分`;
+            document.getElementById('module2-score-en').textContent = `Current Score：${module2Score}/30 points`;
+            document.getElementById('module3-score').textContent = `当前得分：${module3Score}/44分`;
+            document.getElementById('module3-score-en').textContent = `Current Score：${module3Score}/44 points`;
+
+            // Total score and feedback
+            const totalScore = module1Score + module2Score + module3Score;
+            let feedbackZH = '', feedbackEN = '';
+            
+            if (totalScore >= 80 && module1Score >=15 && module2Score >=15 && module3Score >=15) {
+                feedbackZH = '<p class="zh-text"><strong>评估结果：优先处理</strong> - 符合HR COE介入标准，建议提交正式申请。</p>';
+                feedbackEN = '<p class="en-text"><strong>Result：Priority Handling</strong> - Meets HR COE intervention criteria; recommend formal submission.</p>';
+            } else if (totalScore >=60) {
+                feedbackZH = '<p class="zh-text"><strong>评估结果：需优化后重提</strong> - 请根据框架要求补充信息（如战略对齐说明、预算权定义等）。</p>';
+                feedbackEN = '<p class="en-text"><strong>Result：Optimization Required</strong> - Supplement information per framework requirements (e.g., strategic alignment, budget authority).</p>';
+            } else {
+                feedbackZH = '<p class="zh-text"><strong>评估结果：不予受理</strong> - 变革需求合理性不足，建议重新审视业务规划。</p>';
+                feedbackEN = '<p class="en-text"><strong>Result：Rejected</strong> - Insufficient rationality; recommend re-evaluating business planning.</p>';
+            }
+
+            // Display results
+            document.getElementById('module1-result').textContent = module1Score;
+            document.getElementById('module2-result').textContent = module2Score;
+            document.getElementById('module3-result').textContent = module3Score;
+            document.getElementById('total-score').textContent = `<strong>${totalScore}</strong>`;
+            document.getElementById('result-feedback').innerHTML = feedbackZH + feedbackEN;
+            document.getElementById('result-section').style.display = 'block';
+
+            // Scroll to results
+            document.getElementById('result-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize with Chinese language
+        switchLang('zh');
+    </script>
+
+</body></html>
